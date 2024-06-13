@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    students=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+    grades=sorted(set([score for name, score in students]))
+    if len(grades)<2:
+        sec_low_score=grades[0]
+    else:
+        sec_low_score=grades[1]
+    names=[name for name, score in students if score==sec_low_score]
+    names.sort()
+    for student in names:
+        print(student)
