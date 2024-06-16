@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+roll_e=set(map(int, input().split()))
+b=int(input())
+roll_f=set(map(int, input().split()))
+common=roll_e.intersection(roll_f)
+print(len(common))
