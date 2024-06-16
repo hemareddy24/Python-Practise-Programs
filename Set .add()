@@ -4,3 +4,10 @@ country=set()
 for i in range(n):
     country.add(input())
 print(len(country))
+
+
+OR
+
+
+ n=int(input())
+print(len(set(input() for i in range(n))))
