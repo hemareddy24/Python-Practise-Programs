@@ -1,0 +1,12 @@
+def average(array):
+    # your code goes here
+    d_h=set(arr)
+    total=sum(d_h)
+    count=len(d_h)
+    avg=total/count
+    return f"{avg:.3f}"
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
