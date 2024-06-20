@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+N1=int(input())
+roll_e=set(map(int, input().split()))
+N2=int(input())
+roll_f=set(map(int, input().split()))
+roll_n=roll_e.symmetric_difference(roll_f)
+print(len(roll_n))
+
